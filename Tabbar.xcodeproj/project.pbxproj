@@ -20,6 +20,8 @@
 		3825EC18287F2908002ECDDC /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3825EC17287F2908002ECDDC /* Data.plist */; };
 		3825EC1C287F2B03002ECDDC /* GridOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825EC1A287F2B03002ECDDC /* GridOneTableViewCell.swift */; };
 		3825EC1D287F2B03002ECDDC /* GridOneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3825EC1B287F2B03002ECDDC /* GridOneTableViewCell.xib */; };
+		382EFE162881BB7000F67F49 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382EFE142881BB7000F67F49 /* CommentTableViewCell.swift */; };
+		382EFE172881BB7000F67F49 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382EFE152881BB7000F67F49 /* CommentTableViewCell.xib */; };
 		38B79EC62874776B00607E5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B79EC52874776B00607E5C /* AppDelegate.swift */; };
 		38B79ECF2874776D00607E5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38B79ECE2874776D00607E5C /* Assets.xcassets */; };
 		38B79ED22874776D00607E5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38B79ED02874776D00607E5C /* LaunchScreen.storyboard */; };
@@ -58,6 +60,8 @@
 		3825EC17287F2908002ECDDC /* Data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		3825EC1A287F2B03002ECDDC /* GridOneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridOneTableViewCell.swift; sourceTree = "<group>"; };
 		3825EC1B287F2B03002ECDDC /* GridOneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridOneTableViewCell.xib; sourceTree = "<group>"; };
+		382EFE142881BB7000F67F49 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		382EFE152881BB7000F67F49 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		38B79EC22874776B00607E5C /* Tabbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B79EC52874776B00607E5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38B79ECE2874776D00607E5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 				3825EC1B287F2B03002ECDDC /* GridOneTableViewCell.xib */,
 				380F6696287FD334008D07E1 /* GridCollectionViewCell.swift */,
 				380F6697287FD334008D07E1 /* GridCollectionViewCell.xib */,
+				382EFE142881BB7000F67F49 /* CommentTableViewCell.swift */,
+				382EFE152881BB7000F67F49 /* CommentTableViewCell.xib */,
 			);
 			path = CustomViewTable;
 			sourceTree = "<group>";
@@ -298,6 +304,7 @@
 				381042DD287F0DC10004740E /* ProfileViewController.xib in Resources */,
 				381042E1287F0DD10004740E /* FavoriteViewController.xib in Resources */,
 				380F669E288033F1008D07E1 /* DetailViewController.xib in Resources */,
+				382EFE172881BB7000F67F49 /* CommentTableViewCell.xib in Resources */,
 				380F6699287FD334008D07E1 /* GridCollectionViewCell.xib in Resources */,
 				38B79EFE2874862400607E5C /* HomeViewController.xib in Resources */,
 			);
@@ -328,6 +335,7 @@
 				38B79EC62874776B00607E5C /* AppDelegate.swift in Sources */,
 				3825EC1C287F2B03002ECDDC /* GridOneTableViewCell.swift in Sources */,
 				381042E0287F0DD10004740E /* FavoriteViewController.swift in Sources */,
+				382EFE162881BB7000F67F49 /* CommentTableViewCell.swift in Sources */,
 				380F6698287FD334008D07E1 /* GridCollectionViewCell.swift in Sources */,
 				381042E5287F0DE60004740E /* MapViewController.swift in Sources */,
 				38B79EFD2874862400607E5C /* HomeViewController.swift in Sources */,
