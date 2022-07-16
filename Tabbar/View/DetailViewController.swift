@@ -16,7 +16,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     let cellName = String(describing: CommentTableViewCell.self)
     
     var dataName = [("Tien Le P."), ("Tam Nguyen M."), ("Linh Vo D.")]
-    var dataDay = [("16 days ago"), ("17 days ago"), ("18 days ago")]
+    var dataDay = [("2022/3/1"), ("2022/4/1"), ("2022/5/1")]
     var dataComment = [
         ("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"),
         ("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"),
@@ -53,6 +53,20 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         pin.title = "Hello"
         pin.subtitle = "Are you still here?"
         mapView.addAnnotation(pin)
+    }
+    
+    func daysAgo(dateHistory: String) -> String{
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy/MM/dd"
+        let xmas = dateFormatter.date(from: dateHistory)
+        let today = dateFormatter.date(from: dateFormatter.string(from: date)) as Any
+        
+        let int1 = Int((today as AnyObject).timeIntervalSinceReferenceDate)
+        let int2 = Int(xmas!.timeIntervalSinceReferenceDate)
+        
+        let calABS = abs(int1 - int2)
+        return "\(Int(calABS / (60 * 60 * 24)))"
     }
     
     func configTableView(){
@@ -96,7 +110,7 @@ extension DetailViewController: UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: cellName) as! CommentTableViewCell
         
         cell.lblName.text = self.dataName[indexPath.row]
-        cell.lblDay.text = self.dataDay[indexPath.row]
+        cell.lblDay.text = daysAgo(dateHistory: self.dataDay[indexPath.row])+" days ago"
         cell.lblComment.text = self.dataComment[indexPath.row]
         return cell
     }
@@ -104,10 +118,6 @@ extension DetailViewController: UITableViewDataSource{
 
 extension DetailViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        return 200
-    }
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
     
