@@ -27,6 +27,12 @@
 		38B79ED22874776D00607E5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38B79ED02874776D00607E5C /* LaunchScreen.storyboard */; };
 		38B79EFD2874862400607E5C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B79EFB2874862400607E5C /* HomeViewController.swift */; };
 		38B79EFE2874862400607E5C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B79EFC2874862400607E5C /* HomeViewController.xib */; };
+		38BECE9928840F9700E35903 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BECE9728840F9700E35903 /* ImageCollectionViewCell.swift */; };
+		38BECE9A28840F9700E35903 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38BECE9828840F9700E35903 /* ImageCollectionViewCell.xib */; };
+		38BECE9D28842D2E00E35903 /* FollowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BECE9B28842D2E00E35903 /* FollowerTableViewCell.swift */; };
+		38BECE9E28842D2E00E35903 /* FollowerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38BECE9C28842D2E00E35903 /* FollowerTableViewCell.xib */; };
+		38BECEA128844B4300E35903 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BECE9F28844B4300E35903 /* SettingViewController.swift */; };
+		38BECEA228844B4300E35903 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38BECEA028844B4300E35903 /* SettingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +77,12 @@
 		38B79EE22874776D00607E5C /* TabbarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabbarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B79EFB2874862400607E5C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		38B79EFC2874862400607E5C /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		38BECE9728840F9700E35903 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		38BECE9828840F9700E35903 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		38BECE9B28842D2E00E35903 /* FollowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerTableViewCell.swift; sourceTree = "<group>"; };
+		38BECE9C28842D2E00E35903 /* FollowerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowerTableViewCell.xib; sourceTree = "<group>"; };
+		38BECE9F28844B4300E35903 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		38BECEA028844B4300E35903 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,8 @@
 			children = (
 				380F669B288033F1008D07E1 /* DetailViewController.swift */,
 				380F669C288033F1008D07E1 /* DetailViewController.xib */,
+				38BECE9F28844B4300E35903 /* SettingViewController.swift */,
+				38BECEA028844B4300E35903 /* SettingViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -143,6 +157,10 @@
 				380F6697287FD334008D07E1 /* GridCollectionViewCell.xib */,
 				382EFE142881BB7000F67F49 /* CommentTableViewCell.swift */,
 				382EFE152881BB7000F67F49 /* CommentTableViewCell.xib */,
+				38BECE9728840F9700E35903 /* ImageCollectionViewCell.swift */,
+				38BECE9828840F9700E35903 /* ImageCollectionViewCell.xib */,
+				38BECE9B28842D2E00E35903 /* FollowerTableViewCell.swift */,
+				38BECE9C28842D2E00E35903 /* FollowerTableViewCell.xib */,
 			);
 			path = CustomViewTable;
 			sourceTree = "<group>";
@@ -303,10 +321,13 @@
 				3825EC1D287F2B03002ECDDC /* GridOneTableViewCell.xib in Resources */,
 				381042DD287F0DC10004740E /* ProfileViewController.xib in Resources */,
 				381042E1287F0DD10004740E /* FavoriteViewController.xib in Resources */,
+				38BECEA228844B4300E35903 /* SettingViewController.xib in Resources */,
 				380F669E288033F1008D07E1 /* DetailViewController.xib in Resources */,
 				382EFE172881BB7000F67F49 /* CommentTableViewCell.xib in Resources */,
 				380F6699287FD334008D07E1 /* GridCollectionViewCell.xib in Resources */,
+				38BECE9A28840F9700E35903 /* ImageCollectionViewCell.xib in Resources */,
 				38B79EFE2874862400607E5C /* HomeViewController.xib in Resources */,
+				38BECE9E28842D2E00E35903 /* FollowerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,13 +354,16 @@
 			files = (
 				381042DC287F0DC10004740E /* ProfileViewController.swift in Sources */,
 				38B79EC62874776B00607E5C /* AppDelegate.swift in Sources */,
+				38BECE9D28842D2E00E35903 /* FollowerTableViewCell.swift in Sources */,
 				3825EC1C287F2B03002ECDDC /* GridOneTableViewCell.swift in Sources */,
 				381042E0287F0DD10004740E /* FavoriteViewController.swift in Sources */,
 				382EFE162881BB7000F67F49 /* CommentTableViewCell.swift in Sources */,
 				380F6698287FD334008D07E1 /* GridCollectionViewCell.swift in Sources */,
+				38BECE9928840F9700E35903 /* ImageCollectionViewCell.swift in Sources */,
 				381042E5287F0DE60004740E /* MapViewController.swift in Sources */,
 				38B79EFD2874862400607E5C /* HomeViewController.swift in Sources */,
 				380F669D288033F1008D07E1 /* DetailViewController.swift in Sources */,
+				38BECEA128844B4300E35903 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
